@@ -43,7 +43,7 @@ header > img {
   height: 6em;
   border-radius: 100%;
   border: 1px solid #fff;
-  box-shadow: rgb(28, 32, 93 / 24%) 0 2px 8px 0;
+  box-shadow: rgb(28 32 93 / 24%) 0px 2px 8px 0px;
 }
 
 header > h1 {
@@ -74,7 +74,7 @@ ul > li {
   border-radius: 10em;
   padding: 1em;
   margin: 1.4em 0;
-  box-shadow: rgb(28, 32, 93 / 24%) 0 2px 8px 0;
+  box-shadow: rgb(28 32 93 / 24%) 0px 2px 8px 0px;
 }
 
 ul > li > a {
