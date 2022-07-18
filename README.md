@@ -1,5 +1,5 @@
 ## Link in bio
-https://links-dionannd.vercel.app/
+https://bit.ly/Linksdion
 
 ## Ingredients
 - [Vanta.js](https://www.vantajs.com/) - Animated backgrounds
