@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+
+:root {
+  --text-color: #000;
+  --text-size-sm: 14px;
+  --text-size-md: 16px;
+  --stroke-opacity: 50%;
+  --surface-opacity: 5%;
+  --surface-opacity-hover: 2%;
+  --highlight-opacity: 10%;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+  background-image: url("/assets/images/bg-light.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  margin-top: 3em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header > img {
+  width: 6em;
+  height: 6em;
+  border-radius: 100%;
+  border: 1px solid #fff;
+  box-shadow: rgb(28 32 93 / 24%) 0px 2px 8px 0px;
+}
+
+header > h1 {
+  display: inline-block;
+  font-size: var(--text-size-sm);
+  font-weight: normal;
+  padding: 8px 0 24px 0;
+}
+
+h1,
+h2,
+h3,
+ul,
+p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 112px;
+  height: auto;
+}
+
+.text-sm {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+}
+
+.text-md {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.stroke-light {
+  border: 1px;
+  border-color: var(--text-color);
+  opacity: var(--stroke-opacity);
+}
+
+.social_media {
+  display: flex;
+}
