@@ -8,6 +8,7 @@ import { Sosmed } from "@/components/sosmed";
 import { linksData } from "@/data/links";
 import cn from "@/lib/utils";
 import { useStoreToggle } from "@/hooks/use-store-toggle";
+import Loading from "./loading";
 
 export default function Home() {
   const { enabled } = useStoreToggle();
