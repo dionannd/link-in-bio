@@ -14,8 +14,7 @@ export const Footer: React.FC<FooterProps> = ({ enabled }) => {
           enabled ? "text-black" : "text-white"
         )}
       >
-        Copyright &copy;{new Date().getFullYear()} Dian Ananda. All rights
-        reserved
+        Copyright &copy;{new Date().getFullYear()} Dionannd. All rights reserved
       </p>
     </div>
   );
