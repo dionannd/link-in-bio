@@ -10,7 +10,7 @@ export const Profile: React.FC<ProfileProps> = ({ enabled }) => {
   return (
     <div className="flex flex-col items-center py-6 gap-2 w-full">
       <Image
-        src="/images/profile.png"
+        src="/images/profile.jpg"
         width={112}
         height={112}
         alt="Profile"
@@ -18,6 +18,7 @@ export const Profile: React.FC<ProfileProps> = ({ enabled }) => {
           "rounded-full border-2",
           enabled ? "border-black/50" : "border-white/50"
         )}
+        priority
       />
       <p className={cn("text-sm", enabled ? "text-black" : "text-white")}>
         @dionannd
