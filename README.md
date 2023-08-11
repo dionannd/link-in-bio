@@ -2,6 +2,8 @@
 
 [Bio Dionannd](https://links.dianananda.site)
 
+Design in figma [files](https://www.figma.com/file/VIsYxLtdEOg1KOsN85ts0y/DevLinks-%E2%80%A2-Projeto-Discover-(Community)?type=design&node-id=10-620&mode=design&t=SAinNXORE9CTt6Xj-0)
+
 ## Ingredients
 
 - [tailwindcss](https://tailwindcss.com) - A utility-first CSS framework.
