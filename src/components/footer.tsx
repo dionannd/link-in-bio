@@ -1,11 +1,10 @@
+import { useStoreToggle } from "@/hooks/use-store-toggle";
 import cn from "@/lib/utils";
 import React from "react";
 
-interface FooterProps {
-  enabled: boolean;
-}
+export const Footer = () => {
+  const { enabled } = useStoreToggle();
 
-export const Footer: React.FC<FooterProps> = ({ enabled }) => {
   return (
     <div className="flex items-center justify-center p-6">
       <p

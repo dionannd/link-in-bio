@@ -1,16 +1,17 @@
 import React from "react";
 import Image from "next/image";
 import cn from "@/lib/utils";
+import { useStoreUser } from "@/hooks/use-store-user";
+import { useStoreToggle } from "@/hooks/use-store-toggle";
 
-interface ProfileProps {
-  enabled: boolean;
-}
+export const Profile = () => {
+  const { name, image } = useStoreUser();
+  const { enabled } = useStoreToggle();
 
-export const Profile: React.FC<ProfileProps> = ({ enabled }) => {
   return (
     <div className="flex flex-col items-center py-6 gap-2 w-full">
       <Image
-        src="/images/profile.jpg"
+        src={image}
         width={112}
         height={112}
         alt="Profile"
@@ -21,7 +22,7 @@ export const Profile: React.FC<ProfileProps> = ({ enabled }) => {
         priority
       />
       <p className={cn("text-sm", enabled ? "text-black" : "text-white")}>
-        @dionannd
+        @{name}
       </p>
     </div>
   );

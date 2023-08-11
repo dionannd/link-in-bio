@@ -11,6 +11,6 @@ export const linksData: ILink[] = [
   },
   {
     title: "Buat Undangan Online/Digital",
-    url: "https://towedd.com",
+    url: "https://www.towedd.com",
   },
 ];

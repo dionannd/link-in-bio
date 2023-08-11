@@ -14,7 +14,10 @@ export const metadata: Metadata = {
   viewport: { width: "device-width", initialScale: 1 },
   creator: "Dian Ananda",
   robots: { index: false, follow: false },
-  icons: "/images/icon.png",
+  icons: {
+    icon: "/images/icon.png",
+    apple: "/images/icon.png",
+  },
   openGraph: {
     title: "Dian Ananda - Links",
     description: "My link in bio cool page",

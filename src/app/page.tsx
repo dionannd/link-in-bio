@@ -8,7 +8,6 @@ import { Sosmed } from "@/components/sosmed";
 import { linksData } from "@/data/links";
 import cn from "@/lib/utils";
 import { useStoreToggle } from "@/hooks/use-store-toggle";
-import Loading from "./loading";
 
 export default function Home() {
   const { enabled } = useStoreToggle();
@@ -23,11 +22,11 @@ export default function Home() {
       )}
     >
       <div className="container transition-all duration-300 flex flex-col items-center pt-14 max-w-[360px] sm:max-w-[360px] md:max-w-[540px] lg:max-w-[540px] xl:max-w-[540px] w-full">
-        <Profile enabled={enabled} />
+        <Profile />
         <ThemeToggle />
         <Links links={linksData} />
-        <Sosmed enabled={enabled} />
-        <Footer enabled={enabled} />
+        <Sosmed />
+        <Footer />
       </div>
     </main>
   );

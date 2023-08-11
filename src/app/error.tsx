@@ -13,6 +13,12 @@ export default function Error({
 }) {
   const { enabled } = useStoreToggle();
 
+  useEffect(() => {
+    if (error) {
+      console.log(error);
+    }
+  }, [error]);
+
   return (
     <div
       className={cn(

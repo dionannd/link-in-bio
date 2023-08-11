@@ -6,30 +6,39 @@ import GithubIcon from "@/components/icons/github";
 import LinkedinIcon from "@/components/icons/linkedin";
 import InstagramIcon from "@/components/icons/instagram";
 import FacebookIcon from "./icons/facebook";
+import { useStoreUser } from "@/hooks/use-store-user";
+import { useStoreToggle } from "@/hooks/use-store-toggle";
 
-interface SosmedProps {
-  enabled: boolean;
-}
+export const Sosmed = () => {
+  const { sosial_media } = useStoreUser();
+  const { enabled } = useStoreToggle();
 
-export const Sosmed: React.FC<SosmedProps> = ({ enabled }) => {
   return (
     <div className="flex space-x-4 justify-center w-full items-center p-6">
-      <IconButton
-        href="https://github.com/dionannd"
-        icon={<GithubIcon fill={!enabled ? "white" : "black"} />}
-      />
-      <IconButton
-        href="https://www.instagram.com/dionannd_"
-        icon={<InstagramIcon fill={!enabled ? "white" : "black"} />}
-      />
-      <IconButton
-        href="https://web.facebook.com/dion.ananda"
-        icon={<FacebookIcon fill={!enabled ? "white" : "black"} />}
-      />
-      <IconButton
-        href="https://www.linkedin.com/in/dian-ananda-552a79152"
-        icon={<LinkedinIcon fill={!enabled ? "white" : "black"} />}
-      />
+      {sosial_media.github && (
+        <IconButton
+          href={sosial_media.github}
+          icon={<GithubIcon fill={!enabled ? "white" : "black"} />}
+        />
+      )}
+      {sosial_media.instagram && (
+        <IconButton
+          href={sosial_media.instagram}
+          icon={<InstagramIcon fill={!enabled ? "white" : "black"} />}
+        />
+      )}
+      {sosial_media.facebook && (
+        <IconButton
+          href={sosial_media.facebook}
+          icon={<FacebookIcon fill={!enabled ? "white" : "black"} />}
+        />
+      )}
+      {sosial_media.linkedin && (
+        <IconButton
+          href={sosial_media.linkedin}
+          icon={<LinkedinIcon fill={!enabled ? "white" : "black"} />}
+        />
+      )}
     </div>
   );
 };

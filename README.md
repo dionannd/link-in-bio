@@ -1,8 +1,8 @@
 # Link in bio
 
-[Bio Dionannd](https://links.dianananda.site)
+[Bio dionannd](https://links.dianananda.site)
 
-Design in figma [files](https://www.figma.com/file/VIsYxLtdEOg1KOsN85ts0y/DevLinks-%E2%80%A2-Projeto-Discover-(Community)?type=design&node-id=10-620&mode=design&t=SAinNXORE9CTt6Xj-0)
+Design in figma [files](<https://www.figma.com/file/VIsYxLtdEOg1KOsN85ts0y/DevLinks-%E2%80%A2-Projeto-Discover-(Community)?type=design&node-id=10-620&mode=design&t=SAinNXORE9CTt6Xj-0>)
 
 ## Ingredients
 
@@ -17,7 +17,7 @@ $PROJECT_ROOT
 ├── public          # public static file
 └── src
     ├── app         # all page files
-    ├── component   # all component file
+    ├── components  # all component file
     ├── data        # data
     ├── hooks       # all hooks file
     ├── lib         # helper or utils files

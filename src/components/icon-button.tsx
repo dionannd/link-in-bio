@@ -1,6 +1,6 @@
 import { useStoreToggle } from "@/hooks/use-store-toggle";
 import cn from "@/lib/utils";
-import React, { MouseEventHandler } from "react";
+import React from "react";
 
 interface IconButtonProps {
   href?: string;
@@ -14,6 +14,7 @@ export const IconButton: React.FC<IconButtonProps> = ({
   className,
 }) => {
   const { enabled } = useStoreToggle();
+
   return (
     <a
       href={href}
